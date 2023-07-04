@@ -67,6 +67,7 @@
 
     .logo, .menu, .login {
         align-items: center;
+        font-size: 10px;
     }
 
     .logo {
@@ -79,7 +80,6 @@
 
     .menu {
         width: 70%;
-        font-size: 10px;
         justify-content: center;
     }
 
@@ -113,17 +113,21 @@
 /* #region heroimg */
 
     .heroimg {
-        background-color: var(--bg5);
-        display: flex;
-        align-items: center;
+        background-image: url(../img/jumbo.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     .hero-cont {
-        width: 80%;
-        max-width: 1170px;
-        margin: auto;
-        height: 80%;
-        background-color: var(--bg6);
+        text-align: center;
+        padding-top: 4%;
+        padding-left: 15%;
+        padding-right: 15%;
+        color: white;
+    }
+
+    .hero-cont p {
+        font-size: 12px;
     }
 
 /* #endregion heroimg */
