@@ -280,6 +280,20 @@
         font-size: 24px;
     }
 
+    .f-row1 .lingua {
+        padding: 10px 0 10px 0;
+        color: white;
+        font-size: 10px;
+    }
+
+    .f-row1 img {
+        width: 15px;
+    }
+
+    .f-row1 .social-icons {
+        color: white;
+    }
+
     .f-row1 a {
         font-size: 10px;
         color:white;
