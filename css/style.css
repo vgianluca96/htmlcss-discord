@@ -10,9 +10,9 @@
         --bg1: rgba(37, 94, 233, 1);
         --bg2: rgba(35, 39, 42, 1);
         --bg3: rgba(246, 246, 246, 1);
+        --bg4: rgba(142, 161, 225, 1);
 
 
-        --bg4: rgb(176, 248, 172);
         --bg5: rgb(142, 173, 212);
         --bg6: rgb(93, 138, 178);
         --bg7: rgb(77, 148, 235);
@@ -173,7 +173,7 @@
         padding: 0 40px 0 40px; 
     }
 
-    .card h1 {
+    .card h2 {
         font-size: 36px;
         color: var(--bg2);
     }
@@ -189,13 +189,42 @@
 
 /* #endregion sezioni general */
 
-/* #region sezione 2 */
+/* #region sezione 2 e 4 */
 
-.section2 {
+.section2, .section4 {
     background-color: var(--bg3);
 }
 
-/* #endregion sezione 2 */
+.container2 {
+    text-align: center;
+}
+
+.container2 h2 {
+    font-size: 36px;
+    color: var(--bg2);
+}
+
+.container2 p {
+    padding-top: 15px;
+    color: var(--bg2);
+}
+
+.container2 h3 {
+    font-size: 24px;
+    color: var(--bg2);
+}
+
+.container2 button {
+    border: none;
+    margin: 0 15px 0 15px;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: var(--bg4);
+    color: white;
+}
+
+/* #endregion sezione 2 e 4*/
 
 /* #region sezione wave */
 
