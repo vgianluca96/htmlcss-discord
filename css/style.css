@@ -1,0 +1,310 @@
+/* #region General */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --bg1: rgb(135, 233, 132);
+        --bg2: rgb(91, 201, 85);
+        --bg3: rgb(112, 251, 104);
+        --bg4: rgb(176, 248, 172);
+        --bg5: rgb(142, 173, 212);
+        --bg6: rgb(93, 138, 178);
+        --bg7: rgb(77, 148, 235);
+        --bg8: rgb(157, 207, 252);
+        --bord: 1px dashed rgb(5, 68, 5);
+        --bord-card: 1px solid rgb(14, 38, 14);
+    }
+
+    .debug1 {
+        height: 50px;
+    }
+
+    .debug2 {
+        height: 200px;
+    }
+
+    .debug3 {
+        height: 50px;
+    }
+
+/* #endregion General */
+
+/* #region Header */
+
+    header {
+        background-color: var(--bg1);
+    }
+
+    nav {
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+        background-color: var(--bg2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-item1 {
+        width: 15%;
+        height: 60%;
+        background-color: var(--bg3);
+        border: var(--bord);
+    }
+
+    .nav-item2 {
+        width: 70%;
+        height: 60%;
+        background-color: var(--bg3);
+        border: var(--bord);
+    }
+
+/* #endregion Header */
+
+/* #region heroimg */
+
+    .heroimg {
+        background-color: var(--bg5);
+        display: flex;
+        align-items: center;
+    }
+
+    .hero-cont {
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+        height: 80%;
+        background-color: var(--bg6);
+    }
+
+/* #endregion heroimg */
+
+/* #region sezione 1 */
+
+    .s1-sez-container {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .s1-container {
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+        background-color: var(--bg2);
+        display: flex;
+        align-items: center;
+    }
+
+    .s1-row {
+        width: 100%;
+        height: 80%;
+        background-color: var(--bg3);
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .s1-col1 {
+        width: 60%;
+        height: 80%;
+        background-color: var(--bg4);
+        border: var(--bord);
+    }
+
+    .s1-col2 {
+        width: 40%;
+        height: 80%;
+        background-color: var(--bg4);
+        border: var(--bord);
+    }
+
+    .s1-card {
+        width: 60%;
+        height: 40%;
+        margin: 1rem;
+        border: var(--bord-card);
+    }
+
+/* #endregion sezione 1*/
+
+/* #region sezione 2 */
+
+    .s2-sez-container {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    .s2-container {
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+        background-color: var(--bg6);
+        display: flex;
+        align-items: center;
+    }
+
+    .s2-row {
+        width: 100%;
+        height: 80%;
+        background-color: var(--bg7);
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .s2-col1 {
+        width: 60%;
+        height: 80%;
+        background-color: var(--bg8);
+        border: var(--bord);
+    }
+
+    .s2-col2 {
+        width: 40%;
+        height: 80%;
+        background-color: var(--bg8);
+        border: var(--bord);
+    }
+
+    .s2-card {
+        width: 60%;
+        height: 40%;
+        margin: 1rem;
+        border: var(--bord-card);
+    }
+
+/* #endregion sezione 2  */
+
+/* #region sezione 3 */
+
+.s3-sez-container {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.s3-container {
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+    background-color: var(--bg2);
+    display: flex;
+    align-items: center;
+}
+
+.s3-row {
+    width: 100%;
+    height: 80%;
+    background-color: var(--bg3);
+    display: flex;
+    align-items: center;
+    
+}
+
+.s3-col1 {
+    width: 60%;
+    height: 80%;
+    background-color: var(--bg4);
+    border: var(--bord);
+}
+
+.s3-col2 {
+    width: 40%;
+    height: 80%;
+    background-color: var(--bg4);
+    border: var(--bord);
+}
+
+.s3-card {
+    width: 60%;
+    height: 40%;
+    margin: 1rem;
+    border: var(--bord-card);
+}
+
+/* #endregion sezione 3 */
+
+/* #region sezione 4 */
+
+.s4-sez-container {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.s4-container {
+    width: 80%;
+    max-width: 1170px;
+    margin: auto;
+    height: 80%;
+    background-color: var(--bg6);
+}
+
+/* #endregion sezione 4  */
+
+/* #region footer */
+
+    footer {
+        background-color: var(--bg1);
+    }
+
+    .f-container {
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+        background-color: var(--bg2);
+        display: flex;
+        align-items: center;
+    }
+
+    .f-row1 {
+        width: 100%;
+        height: 80%;
+        background-color: var(--bg3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .f-col1 {
+        width: 30%;
+        height: 80%;
+        background-color: var(--bg4);
+        border: var(--bord);
+    }
+
+    .f-col2 {
+        width: 15%;
+        height: 80%;
+        background-color: var(--bg4);
+        border: var(--bord);
+    }
+
+    .f-container2 {
+        width: 80%;
+        max-width: 1170px;
+        margin: auto;
+        background-color: var(--bg2);
+        display: flex;
+    }
+
+    .f-row2 {
+        width: 100%;
+        height: 80%;
+        background-color: var(--bg3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .f-col3 {
+        width: 20%;
+        height: 80%;
+        background-color: var(--bg4);
+        border: var(--bord);
+    }
+
+/* #endregion footer */
