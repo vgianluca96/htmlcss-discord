@@ -11,15 +11,7 @@
         --bg2: rgba(35, 39, 42, 1);
         --bg3: rgba(246, 246, 246, 1);
         --bg4: rgba(142, 161, 225, 1);
-
-
-        --bg5: rgb(142, 173, 212);
-        --bg6: rgb(93, 138, 178);
-        --bg7: rgb(77, 148, 235);
-        --bg8: rgb(157, 207, 252);
-
-        --bord: 1px dashed rgb(5, 68, 5);
-        --bord-card: 1px solid rgb(14, 38, 14);
+        --bg5: rgba(113, 136, 217, 1);
     }
 
     body {
@@ -105,6 +97,7 @@
         padding: 6px 12px;
         border-radius: 16px;
         font-size: 12px;
+        color: var(--bg2);
     }
 
 /* #endregion Header */
@@ -144,6 +137,7 @@
 
     .hero-cont .mac {
         background-color: white;
+        color: var(--bg2);
     }
 
     .hero-cont .browser {
@@ -244,64 +238,74 @@
 /* #region footer */
 
     footer {
-        background-color: var(--bg1);
-    }
-
-    .f-container {
-        width: 80%;
-        max-width: 1170px;
-        margin: auto;
         background-color: var(--bg2);
-        display: flex;
-        align-items: center;
+        padding: 50px 0 50px 0;
     }
 
     .f-row1 {
-        width: 100%;
-        height: 80%;
-        background-color: var(--bg3);
-        display: flex;
         justify-content: space-between;
-        align-items: center;
-        
+        align-items: flex-start;
+        border-bottom: 1px solid var(--bg5);
+        padding: 10px 0 10px 0;        
     }
 
     .f-col1 {
-        width: 30%;
-        height: 80%;
-        background-color: var(--bg4);
-        border: var(--bord);
+        width: calc(100% / 12 * 4);
     }
 
     .f-col2 {
-        width: 15%;
-        height: 80%;
-        background-color: var(--bg4);
-        border: var(--bord);
-    }
-
-    .f-container2 {
-        width: 80%;
-        max-width: 1170px;
-        margin: auto;
-        background-color: var(--bg2);
-        display: flex;
+        width: calc(100% / 12 * 2);
     }
 
     .f-row2 {
-        width: 100%;
-        height: 80%;
-        background-color: var(--bg3);
-        display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px 0 10px 0;
     }
 
     .f-col3 {
-        width: 20%;
-        height: 80%;
+        width: calc(100% / 12 * 2);
+    }
+
+    .f-col4 {
+        width: calc(100% / 12 * 2);
+        justify-content: flex-end;
+    }
+
+    .f-row1 h3, .f-row1 h5 {
+        color: var(--bg5);
+    }
+
+    .f-row1 h3 {
+        font-size: 24px;
+    }
+
+    .f-row1 a {
+        font-size: 10px;
+        color:white;
+        text-decoration: none;
+    }
+
+    .f-row1 a:hover {
+        text-decoration: underline;
+    }
+
+    .f-row1 ul {
+        color: white;
+        list-style-type: none;
+    }
+
+    .f-row2 img {
+        width: 80%;
+    }
+
+    .f-row2 button {
         background-color: var(--bg4);
-        border: var(--bord);
+        border: none;
+        padding: 6px 12px;
+        border-radius: 16px;
+        font-size: 12px;
+        color: white;
     }
 
 /* #endregion footer */
