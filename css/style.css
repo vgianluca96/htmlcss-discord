@@ -8,9 +8,10 @@
 
     :root {
         --bg1: rgba(37, 94, 233, 1);
+        --bg2: rgba(35, 39, 42, 1);
+        --bg3: rgba(246, 246, 246, 1);
 
-        --bg2: rgb(91, 201, 85);
-        --bg3: rgb(112, 251, 104);
+
         --bg4: rgb(176, 248, 172);
         --bg5: rgb(142, 173, 212);
         --bg6: rgb(93, 138, 178);
@@ -19,8 +20,6 @@
 
         --bord: 1px dashed rgb(5, 68, 5);
         --bord-card: 1px solid rgb(14, 38, 14);
-
-
     }
 
     body {
@@ -67,11 +66,11 @@
 
     .logo, .menu, .login {
         align-items: center;
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .logo {
-        width: 15%;
+        width: calc(100% / 12 * 2);
     }
 
     .logo img {
@@ -79,7 +78,7 @@
     }
 
     .menu {
-        width: 70%;
+        width: calc(100% / 12 * 8);
         justify-content: center;
     }
 
@@ -96,16 +95,16 @@
     }
 
     .login {
-        width: 15%;
+        width: calc(100% / 12 * 2);
         justify-content: flex-end;
     }
 
     .login button {
         background-color: white;
         border: none;
-        padding: 6px;
+        padding: 6px 12px;
         border-radius: 16px;
-        font-size: 10px;
+        font-size: 12px;
     }
 
 /* #endregion Header */
@@ -120,10 +119,7 @@
 
     .hero-cont {
         text-align: center;
-        padding-left: 17%;
-        padding-right: 17%;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding: 100px 250px 200px 250px;
         color: white;
     }
 
@@ -132,17 +128,18 @@
     }
 
     .hero-cont p {
-        padding-top: 18px;
-        padding-bottom: 18px;
-        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        font-size: 14px;
+        line-height: 1.5rem;
     }
 
     .hero-cont button {
         border: none;
-        margin: 15px;
+        margin: 0 15px 0 15px;
         padding: 15px 25px;
         border-radius: 30px;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .hero-cont .mac {
@@ -150,172 +147,64 @@
     }
 
     .hero-cont .browser {
-        background-color: rgba(35, 39, 42, 1);
+        background-color: var(--bg2);
         color: white;
     }
 
 /* #endregion heroimg */
 
-/* #region sezione 1 */
-
-    .s1-sez-container {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-    }
-
-    .s1-container {
-        width: 80%;
-        max-width: 1170px;
-        margin: auto;
-        background-color: var(--bg2);
-        display: flex;
-        align-items: center;
-    }
-
-    .s1-row {
-        width: 100%;
-        height: 80%;
-        background-color: var(--bg3);
-        display: flex;
-        align-items: center;
-        
-    }
-
-    .s1-col1 {
-        width: 60%;
-        height: 80%;
-        background-color: var(--bg4);
-        border: var(--bord);
-    }
-
-    .s1-col2 {
-        width: 40%;
-        height: 80%;
-        background-color: var(--bg4);
-        border: var(--bord);
-    }
-
-    .s1-card {
-        width: 60%;
-        height: 40%;
-        margin: 1rem;
-        border: var(--bord-card);
-    }
-
-/* #endregion sezione 1*/
-
-/* #region sezione 2 */
-
-    .s2-sez-container {
-        padding-top: .5rem;
-        padding-bottom: .5rem;
-    }
-
-    .s2-container {
-        width: 80%;
-        max-width: 1170px;
-        margin: auto;
-        background-color: var(--bg6);
-        display: flex;
-        align-items: center;
-    }
-
-    .s2-row {
-        width: 100%;
-        height: 80%;
-        background-color: var(--bg7);
-        display: flex;
-        align-items: center;
-        
-    }
-
-    .s2-col1 {
-        width: 60%;
-        height: 80%;
-        background-color: var(--bg8);
-        border: var(--bord);
-    }
-
-    .s2-col2 {
-        width: 40%;
-        height: 80%;
-        background-color: var(--bg8);
-        border: var(--bord);
-    }
-
-    .s2-card {
-        width: 60%;
-        height: 40%;
-        margin: 1rem;
-        border: var(--bord-card);
-    }
-
-/* #endregion sezione 2  */
-
-/* #region sezione 3 */
-
-.s3-sez-container {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-}
-
-.s3-container {
-    width: 80%;
-    max-width: 1170px;
-    margin: auto;
-    background-color: var(--bg2);
-    display: flex;
-    align-items: center;
-}
-
-.s3-row {
-    width: 100%;
-    height: 80%;
-    background-color: var(--bg3);
-    display: flex;
-    align-items: center;
+/* #region sezioni */
     
+    .row {
+        display: flex;
+        align-items: center;
+        padding: 40px 0 40px 0;
+    }
+
+    .col-4 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-8 {
+        width: calc(100% / 12 * 8);
+    }
+
+    .col-8 .card {
+        padding: 0 40px 0 40px; 
+    }
+
+    .card h1 {
+        font-size: 36px;
+        color: var(--bg2);
+    }
+
+    .card p {
+        padding-top: 15px;
+        color: var(--bg2);
+    }
+
+/* #endregion sezioni*/
+
+/* #region sezione 2*/
+
+.section2 {
+    background-color: var(--bg3);
 }
 
-.s3-col1 {
-    width: 60%;
-    height: 80%;
-    background-color: var(--bg4);
-    border: var(--bord);
+/* #endregion sezione 2*/
+
+/* #region sezione wave*/
+
+.section-wave img {
+    width: 100%;
+    filter: invert(99%) sepia(3%) saturate(96%) hue-rotate(165deg) brightness(112%) contrast(93%);
 }
 
-.s3-col2 {
-    width: 40%;
-    height: 80%;
-    background-color: var(--bg4);
-    border: var(--bord);
+.section-wave.rot {
+    rotate: x 180deg;
 }
 
-.s3-card {
-    width: 60%;
-    height: 40%;
-    margin: 1rem;
-    border: var(--bord-card);
-}
-
-/* #endregion sezione 3 */
-
-/* #region sezione 4 */
-
-.s4-sez-container {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-}
-
-.s4-container {
-    width: 80%;
-    max-width: 1170px;
-    margin: auto;
-    height: 80%;
-    background-color: var(--bg6);
-}
-
-/* #endregion sezione 4  */
+/* #endregion sezione 2*/
 
 /* #region footer */
 
