@@ -197,6 +197,7 @@
 
 .container2 {
     text-align: center;
+    padding: 40px 0 40px 0;
 }
 
 .container2 h2 {
@@ -205,18 +206,18 @@
 }
 
 .container2 p {
-    padding-top: 15px;
+    padding: 20px 120px 20px 120px;
     color: var(--bg2);
 }
 
 .container2 h3 {
     font-size: 24px;
     color: var(--bg2);
+    padding-bottom: 50px;
 }
 
 .container2 button {
     border: none;
-    margin: 0 15px 0 15px;
     padding: 15px 25px;
     border-radius: 30px;
     font-size: 16px;
